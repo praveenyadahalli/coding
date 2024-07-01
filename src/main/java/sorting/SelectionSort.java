@@ -1,5 +1,9 @@
 package sorting;
 
+/*
+ * Time Complexity - O(n2)
+ * Space Complexity - O(1)
+ */
 public class SelectionSort {
     public static void main(String[] args) {
         int arr[] = {1, 2,5, 6, 4, 3};

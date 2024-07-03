@@ -15,7 +15,7 @@ public class ArrayListToLinkedList {
         // Create a LinkedList
         LinkedList<Integer> linkedList = new LinkedList<>();
 
-        // Add elements from ArrayList to LinkedList
+        // Add elements from ArrayList to LinkedList .addall method accepts arraylist 
         linkedList.addAll(arrayList);
 
         // Print the LinkedList

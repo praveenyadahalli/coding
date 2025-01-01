@@ -12,7 +12,7 @@ public class DepthOfNthNode {
 		tree.left.left.left = new TreeNode(9);
 		tree.right.right.right = new TreeNode(14);
 
-		int n = nthNodeDepth(tree, 5, 0);
+		int n = nthNodeDepth(tree, 14, 0);
 		System.out.println(n);
 
 	}

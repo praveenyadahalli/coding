@@ -1,4 +1,6 @@
-package tree;
+package tree.bfs;
+
+import tree.TreeNode;
 
 public class PreOrderTraversal {
 	TreeNode root;
@@ -24,6 +26,6 @@ public class PreOrderTraversal {
 		preOrderTraversal.root.left.right = new TreeNode(5);
 
 		System.out.println("Preorder Traversal of the Tree is ");
-		preOrderTraversal.printPreOrder(preOrderTraversal.root);
+		PreOrderTraversal.printPreOrder(preOrderTraversal.root);
 	}
 }

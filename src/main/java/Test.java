@@ -1,35 +1,17 @@
-import java.util.Scanner;
 import java.util.*;
-
 public class Test {
-
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		solve(sc);
+	public static void main(String args[]) {
+		int[] arr= {3,1,2};
+//		for(int i:countElements(arr,2)) {
+			System.out.println("Value: "+countElements(arr,1));
+//		}
 	}
-	
-	public static void solve(Scanner sc) {
-		int t=sc.nextInt();
-		while(t-->0) {
-			int k=sc.nextInt();
-			int l=sc.nextInt();
-			int r=sc.nextInt();
-			
-			int totalCount=0;
-			for(int i=r;i<=l;i++) {
-				int count=1;
-				for(int j=i+1;j<=l;j++) {
-					if(j%i==0) {
-						count++;
-					}
-					if(count>=k) {
-						totalCount++;
-						break;
-					}
-				}
-			}
-			System.out.println(totalCount);
-		}
-	} 
-
+	 public static int countElements(int[] nums, int k) {
+	        if(k == 0) return nums.length;
+	        Arrays.sort(nums);
+	        int i = nums.length - k, n = nums[i];
+	        if(nums[0] == n) return 0;
+	        while(n == nums[i]) i--;
+	        return i + 1;
+	    }
 }

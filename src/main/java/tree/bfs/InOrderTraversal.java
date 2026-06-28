@@ -1,4 +1,6 @@
-package tree;
+package tree.bfs;
+
+import tree.TreeNode;
 
 public class InOrderTraversal {
 	TreeNode root;

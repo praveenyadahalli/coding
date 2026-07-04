@@ -1,7 +1,7 @@
 package linkedList;
 
-class LinkedListOperation {
-    Node head;
+public class LinkedListOperation {
+    public Node head;
     public void push(int new_data){
         Node new_node=new Node(new_data);
         new_node.next=head;
@@ -28,7 +28,7 @@ class LinkedListOperation {
         return false;
     }
 
-    Node reverseList(Node node) {
+    public Node reverseList(Node node) {
         Node prev = null;
         Node current = node;
         Node next = null;

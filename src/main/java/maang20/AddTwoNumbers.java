@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 import linkedList.Node;
 
+// leetcode:2
 public class AddTwoNumbers {
 	public static void main(String[] args) {
 		Node l1=new Node(2);
@@ -23,6 +24,7 @@ public class AddTwoNumbers {
         }
 	}
 	
+	//TC=O(N) SC=O(1)
 	public static Node addTwoNumbers(Node l1,Node l2) {
 		Node temp = new Node(0);
 		Node curr = temp;

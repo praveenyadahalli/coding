@@ -1,5 +1,7 @@
 package maang20;
 import java.util.*;
+
+//leetcode: 46
 public class Permutations {
 	public static void main(String[] args) {
 		int[] nums= {1,2,3};

@@ -28,6 +28,7 @@ public class LinkedListOperation {
         return false;
     }
 
+    // tc=O(n) sc=O(1)
     public Node reverseList(Node node) {
         Node prev = null;
         Node current = node;

@@ -1,5 +1,6 @@
 package maang20;
 
+// leetcode: 5
 public class LongestPalindromicSubstring {
 
 	public static void main(String[] args) {
@@ -8,6 +9,7 @@ public class LongestPalindromicSubstring {
 		System.out.println(longestPalindrome(s));
 	}
 
+	// TC=O(n^2) SC=O(1)
 	public static String longestPalindrome(String s) {
 		if (s.length() <= 1) {
 			return s;
@@ -31,6 +33,7 @@ public class LongestPalindromicSubstring {
 		return maxStr;
 	}
 
+	// worst case it can go O(n)
 	private static String expandFromCenter(String s, int left, int right) {
 		while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
 			left--;

@@ -2,6 +2,7 @@ package maang20;
 
 import linkedList.Node;
 
+// leetcode:141
 public class DetectCycle {
     public static void main(String[] args) {
         Node head=new Node(4);
@@ -13,6 +14,8 @@ public class DetectCycle {
 
         System.out.println("Does the linked list have a cycle? " + hasCycle(head));
     }
+    
+    // TC=o(N) sc=O(1)
     public static boolean hasCycle(Node head) {
         Node fast=head;
         Node slow=head;

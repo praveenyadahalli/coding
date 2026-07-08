@@ -1,4 +1,4 @@
-package linkedList;
+package linkedList.singleLinkedList;
 
 public class FindLiengthOfLinkedList {
         public static void main(String[] args) {

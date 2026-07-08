@@ -1,6 +1,8 @@
-package linkedList;
+package linkedList.singleLinkedList;
 
 import java.util.HashMap;
+
+import linkedList.Node;
 
 public class RemoveZeroSumConsecutiveNodes {
 

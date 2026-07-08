@@ -1,8 +1,8 @@
 package maang20;
 
-import linkedList.LinkedListOperation;
 import linkedList.Node;
-import linkedList.PrintLinkedListElements;
+import linkedList.singleLinkedList.LinkedListOperation;
+import linkedList.singleLinkedList.PrintLinkedListElements;
 
 // leetcode: 206
 public class ReverseLinkedList {

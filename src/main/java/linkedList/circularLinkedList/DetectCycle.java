@@ -1,4 +1,6 @@
-package linkedList;
+package linkedList.circularLinkedList;
+
+import linkedList.Node;
 
 public class DetectCycle {
     public static void main(String[] args) {

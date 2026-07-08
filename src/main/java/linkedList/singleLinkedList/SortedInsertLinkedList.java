@@ -1,6 +1,8 @@
-package linkedList;
+package linkedList.singleLinkedList;
 
 import java.util.LinkedList;
+
+import linkedList.Node;
 
 public class SortedInsertLinkedList {
     public static void main(String[] args) {

@@ -16,19 +16,33 @@ public class RemoveNthNodeFromEnd {
         }
     }
     public static Node removeNthFromEnd(Node head, int n) {
-        Node curr=head;
-        int len=0;
-        while(curr!=null){
-            len++;
-            curr=curr.next;
+        Node temp=head;
+        int listLength=getListLength(head);
+        
+        int nFromBegin = listLength-n+1;
+        if(nFromBegin==1) {
+        	return head.next;
         }
-        int nFromStart=len-n+1;
-        if(nFromStart==1) return head.next;
-        curr=head;
-        while(--nFromStart>1){
-            curr=curr.next;
+        
+        int count=1;
+        while(temp!=null && temp.next!=null) {
+        	if(count+1==nFromBegin) {
+        		temp.next=temp.next.next;
+        		break;
+        	}else {
+        		temp=temp.next;
+        	}
+        	count++;
         }
-        curr.next=curr.next.next;
         return head;
+    }
+    
+    public static int getListLength(Node head) {
+    	int count=0;
+    	while(head!=null) {
+    		count++;
+    		head=head.next;
+    	}
+    	return count;
     }
 }

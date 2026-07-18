@@ -1,7 +1,8 @@
-package graphs;
+package graphs.basicTraversing;
 
 import java.util.*;
 
+// leetcode: 1971
 public class ValidPath {
 	public static void main(String[] args) {
 		int edges[][] = { { 0, 1 }, { 0, 2 }, { 3, 5 }, { 5, 4 }, { 4, 3 } };

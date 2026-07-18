@@ -1,4 +1,4 @@
-package graphs;
+package graphs.basicTraversing;
 
 import java.util.*;
 

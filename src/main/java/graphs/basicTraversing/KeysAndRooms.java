@@ -1,4 +1,4 @@
-package graphs;
+package graphs.basicTraversing;
 
 // leetcode : 841
 import java.util.*;

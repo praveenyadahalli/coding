@@ -1,7 +1,8 @@
-package graphs;
+package graphs.basicTraversing;
 
 import java.util.*;
 
+// leetcode: 547
 public class NumberOfProvinces {
 	public static void main(String[] args) {
 //		int[][] isConnected = { { 1, 1, 0 }, { 1, 1, 0 }, { 0, 0, 1 } };
